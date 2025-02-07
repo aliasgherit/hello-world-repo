@@ -1,1 +1,12 @@
-name: Hello World
+name: Hello World  # Workflow Name
+
+on:  
+  push  # Trigger workflow on push events
+
+jobs:
+  hello-job:  # Job Name
+    runs-on: ubuntu-latest  # Run on Ubuntu runner
+
+    steps:
+      - name: Echo text  # Step Name
+        run: echo "Hello, world!"  # Command to run
